@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
+import LoginPage from './component/LoginPage';
+import SignupPage from './component/LoginPage';
 
 function App() {
 
   return (
-    <header className='header'>
-      <button className='login-button'>Login</button>  
-      <button className='signup-button'>Sign Up</button>          
-    </header>
+    <LoginPage/>
   )
 }
 
