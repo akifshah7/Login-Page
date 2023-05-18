@@ -39,6 +39,7 @@ const LoginPage = () => {
       navigate("/confirmation")
     }).catch((error) => {
       console.log(error)
+      setErr(error.message)    
     })  
   }
 
@@ -106,8 +107,8 @@ const LoginPage = () => {
               className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
             />
           </div>
-          <div className="mb-4">
-            <b className="bold text-sm  text-red-500">{err}</b>
+          <div className="mb-8 text-center">
+            <b className="bold text-sm text-red-500">{err}</b>
             <br/>
             <button
               type="submit"
