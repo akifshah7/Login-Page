@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithGoogle, updateProfile } from "firebase/auth";
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from '../firebase';
-import Confirmation from "./Confirmation";
-
 
 const LoginPage = () => {
   const [values, setValues] = useState({
