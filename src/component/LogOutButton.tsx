@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getAuth, signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const LogOutButton = () => {
   const [isSuccess, setIsSuccess] = useState(false);
@@ -31,4 +32,12 @@ const LogOutButton = () => {
   )
 }
 
-export default LogOutButton
+LogOutButton.propTypes = {
+  label: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  handleClick: PropTypes.func
+
+}
+
+export default LogOutButton;  

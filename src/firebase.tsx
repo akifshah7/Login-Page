@@ -15,12 +15,23 @@ const firebaseConfig = {
   measurementId: "G-C5WC24Z95V"
 };
 
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export {
   auth
 }
+
+// module.exports = {
+//   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
+//   addons: [
+//     '@storybook/addon-links',
+//     '@storybook/addon-essentials',
+//     '@storybook/preset-create-react-app',
+//     '@storybook/addon-interactions',
+//   ],
+// };
 // const db = getFirestore(app);
 // const googleProvider = new GoogleAuthProvider();
 // const signInWithGoogle = async () => {
