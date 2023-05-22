@@ -20,12 +20,14 @@ export const Default: Story = {
 
 export const Another: Story = {
     args: {
-        variant: 'secondary'
+        variant: 'secondary',
+        size: 'sm'
     }
 }
 
 export const New: Story = {
     args : {
-        variant: 'tertiory'
+        variant: 'tertiory',
+        size: 'lg'
     }
 }

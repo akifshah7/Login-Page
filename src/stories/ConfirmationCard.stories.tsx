@@ -13,6 +13,15 @@ type Story = StoryObj<typeof meta>;
 export const Default : Story = {
     args: {
         label: 'Signed in as abcd',
-        color: 'blue'
+        color: 'blue',
+        variant: 'primary'
+    }
+}
+
+export const First : Story = {
+    args: {
+        label: 'Signed in as Akif',
+        color: 'black',
+        variant: 'secondary'
     }
 }
