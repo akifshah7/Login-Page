@@ -6,20 +6,18 @@ import PropTypes from 'prop-types';
 const LogOutButton = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const auth = getAuth();
+
   const navigate = useNavigate();
 
   
-  const goBack = () => {
-    navigate("/")
-  }
+  // const goBack = () => {
+  //   navigate("/")
+  // }
 
   const handleLogOut = () => {
     signOut(auth).then((res) => {
         console.log(res);        
          setIsSuccess(true);
-         if(isSuccess) {
-         goBack();
-      }
       })  
   }
 
